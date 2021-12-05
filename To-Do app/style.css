@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ffffff;
+
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+h1 {
+  text-align: center;
+}
+.title {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  height: 4rem;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  width: 100%;
+  margin: 0rem;
+  text-align: left;
+  font-weight: bolder;
+}
+.center {
+  width: 20rem;
+  text-align: left;
+}
+.app-window {
+  margin-top: 2rem;
+  border: black solid 2px;
+  border-radius: 10px;
+  padding: 4rem 1rem;
+  padding-top: 0px;
+  background-color: white;
+}
+
+.input-class {
+  margin: 3vh;
+}
+
+.task-text {
+  margin-left: 1rem;
+  flex: 1;
+}
+.general-task-line {
+  display: flex;
+  background-color: rgb(243, 243, 243);
+  transition: all 0.2s ease-in;
+  width: auto;
+}
+.general-task-line:hover {
+  background-color: rgb(233, 233, 233);
+}
+.general-task-line:hover .delete-button {
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  justify-content: right;
+}
+
+.delete-button {
+  display: none;
+  color: crimson;
+  border: none;
+}
+
+.checkbox:checked ~ .task-text {
+  text-decoration-line: line-through;
+  text-decoration-color: crimson;
+}
